@@ -1,0 +1,19 @@
+<!-- <p>product-details works!</p> -->
+
+<div class="d-flex flex-wrap container bgm w-75 m-auto h-50 shadow rounded">
+    <div class="w-25 p-3">
+        <img src={{productDetails.image}} width="100%">
+        <div class="d-flex flex-wrap justify-content-between my-4">
+            <button class="btn">Go to Cart</button>
+            <button class="btn">Buy Now</button>
+        </div>
+    </div>
+    <div class="w-75 p-4">
+        <h3>{{productDetails.title}}</h3>
+        <p><b>Description:</b> {{productDetails.description}}</p>
+        <div class="d-flex flex-wrap justify-content-between p-3" >
+            <h5>Category:{{productDetails.category}}</h5>
+            <h5>Price: ${{productDetails.price}}</h5>
+        </div>
+    </div>
+</div>

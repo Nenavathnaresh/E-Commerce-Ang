@@ -1,0 +1,55 @@
+.font-icon{
+    font-size: 35px;
+}
+ul{
+    margin: 0px;
+}
+.header{
+    background-color: #6e1818;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+.cart{
+    position: relative;
+}
+
+.cartcount{
+    position: absolute;
+    right:30px;
+    top: 5px;;
+    background-color: rgb(255,102,5);
+    outline: white solid 2px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
+
+.dropdown-container{
+    position: relative;
+}
+
+.dropdown-list{
+    width: 800px;
+    border: 1px solid #FFE6C6;
+    background-color: #f5d0a0;
+    position: absolute;
+    top: 23px;
+    left: -35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown-list-item{
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.w-250{
+    width: 250px;
+}
