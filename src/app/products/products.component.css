@@ -10,3 +10,12 @@
     background-color: #6e1818;
     color: white;
 }
+
+div a img{
+    transition: all 0.7s ease-in-out;
+    
+}
+
+div a img:hover{
+    transform: scale(1.1);
+}
