@@ -48,6 +48,8 @@ ul{
 
 .dropdown-list-item{
     text-transform: capitalize;
+    padding: 5px;
+    border-bottom: 1px solid;
     cursor: pointer;
 }
 .w-250{

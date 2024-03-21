@@ -8,8 +8,9 @@ import { ProductService } from '../product.service';
 })
 export class HeaderComponent {
   cartItemCount:any;
+  searchText:any = '';
   isSortMenuVisible:boolean = false
-  criteria:any[]=["Price(Low to High)"];
+  criteria:any[]=["Price(Low to High)", "Price(High to Low)"];
 
   constructor(private ps:ProductService){ }
 
@@ -25,6 +26,10 @@ export class HeaderComponent {
   }
 
   sortProducts(criterion:any){
+    this.ps.sortProducts(criterion)
+  }
 
+  searchProduct(searchText:any){
+    this.ps.getSearchString(searchText);
   }
 }

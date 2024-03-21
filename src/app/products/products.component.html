@@ -1,6 +1,6 @@
 <!-- <h1>products works!</h1>    -->
 <div class="d-flex flex-wrap container justify-content-between align-items-center">
-    <div *ngFor="let product of products; let i = index" class="main-img-width p-3 my-5 rounded bgm" > 
+    <div *ngFor="let product of (products|search:searchText); let i = index" class="main-img-width p-3 my-5 rounded bgm" > 
         <div>
             <a routerLink="productDetails" [queryParams]="product"><img [src]="product.image" width="100%" height="250px" class="rounded-top"></a>
         </div> 
@@ -11,7 +11,7 @@
         <div class="my-3">
             <button *ngIf="!productStatus[i]" class=" btn w-100" (click)="addToCart(product,i)">Add to Cart</button>
            
-            <a routerLink="cart"> <button *ngIf="productStatus[i]" class=" btn w-100">Go to Cart</button></a>
+            <a routerLink="cart"> <button *ngIf="productStatus[i]" class=" btn w-100 goToCart">Go to Cart</button></a>
         </div>
     </div>
 </div>
